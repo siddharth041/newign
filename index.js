@@ -32,3 +32,17 @@ function countdown(n){
 }
 // Only change code above this line
 console.log(countdown(10).reverse());
+
+// For reverse order
+function countdown(n){
+  if(n < 1){
+    return [];
+  } else{
+    const count = countdown(n - 1);
+    count.unshift(n);
+    return count;
+  }
+  
+}
+// Only change code above this line
+console.log(countdown(10));
