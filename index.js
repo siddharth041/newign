@@ -18,3 +18,17 @@ function checkSign(num) {
 
 let res = checkSign();
 console.log(res);
+
+// Use Recursion to Create a Countdown
+function countdown(n){
+  if(n < 1){
+    return [];
+  } else{
+    const count = countdown(n - 1);
+    count.push(n);
+    return count;
+  }
+  
+}
+// Only change code above this line
+console.log(countdown(10).reverse());
