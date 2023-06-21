@@ -1,0 +1,29 @@
+
+
+
+mkdir testrepo
+cd testrepo
+git init
+nano test.py
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/siddharth041/testrepo.git
+git push -u origin main
+
+
+git config --global user.name "Siddharth Singh"
+git config --global user.email "siddharth23010@gmail.com"
+
+
+
+git config --global user.name "siddharth041"
+git config --global user.email "siddharth23010@gmail.com"
+git config -l
+
+git clone https://github.com/siddharth041/testrepo
+
+
+
+
+
